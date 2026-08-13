@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Bookstore Analytics</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header>
+            <h1>📚 Online Bookstore Analytics</h1>
+            <p>Sales, Customers & Inventory Dashboard</p>
+        </header>
+
+
+        <!-- Statistics Cards -->
+        <section class="stats">
+
+            <div class="card">
+                <h3>Total Books</h3>
+                <p id="totalBooks">Loading...</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Customers</h3>
+                <p id="totalCustomers">Loading...</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Orders</h3>
+                <p id="totalOrders">Loading...</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Revenue</h3>
+                <p id="totalRevenue">Loading...</p>
+            </div>
+
+        </section>
+
+
+        <!-- Charts -->
+        <section class="charts">
+
+            <div class="chart-box">
+                <h2>Sales by Genre</h2>
+                <canvas id="genreChart"></canvas>
+            </div>
+
+            <div class="chart-box">
+                <h2>Top Books</h2>
+                <canvas id="bookChart"></canvas>
+            </div>
+
+        </section>
+
+
+        <!-- Books Table -->
+        <section class="table-section">
+
+            <h2>📖 Books</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+
+                <tbody id="booksTable">
+                    <tr>
+                        <td colspan="6">Loading...</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Customers Table -->
+        <section class="table-section">
+
+            <h2>👥 Customers</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>City</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+
+                <tbody id="customersTable">
+                    <tr>
+                        <td colspan="6">Loading...</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
